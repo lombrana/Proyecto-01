@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    
+    /* font-family open sans */
+}
+
+.header-container {
+    width: 100%;
+}
+
+/* container A */
+
+.container-a {
+    display: flex;
+    border-bottom: 0.5px solid #CCCCCC;
+    margin: 0;
+}
+
+.logo {
+   align-items: center;
+   line-height: 0;
+   margin: 10px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction:row;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    left: 80px;
+}
+
+ #categorias {
+    padding: 12px;
+    overflow: hidden;
+    font-size: 14px;
+    border: 1px solid #CCCCCC;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#search-form {
+    padding: 12px;
+    margin-left: 0;
+    overflow: hidden;
+    font-size: 14px;
+    border: 1px solid #CCCCCC;
+    justify-content: center;
+    align-items: center;
+}  
+
+/* menu */
+
+
+.nav-menu {
+   display: flex;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    left: 400px;
+    list-style-type: none;
+    
+}
+
+.item {
+    margin: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #333333;    
+}
+
+/* Container B - sandwich */
+
+.container-b {
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+
+}
+
+.navbar-toggle {
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+#chkToggle { 
+    display: none;
+}
+
+ #chkToggle:checked +ul.main-nav {
+    display: block;
+}
+
+.navbar {
+    font-size: 14px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.text-anivers {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    
+}
+
+.pcanivers {
+    color: #333333;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    left: 1000px;
+    
+}
+
+/* container c */
+
+.container-c {
+    margin: 10px;
+    width: 100vw;
+    display: flex;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 8px;
+    padding: 10px; 
+}
+
+
+
+/* main */
+
+.text {
+    padding: 0 16px;
+    border-bottom: 1px solid #333333;
+}
+
+h2 {
+    color: #333333;
+    font-size: 14px;
+}
+
+p {
+    color: #333333;
+    font-size: 12px;
+}
+
+a {
+    color: rgb(51, 51, 51);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list-text {
+    color: #333333;
+    font-size: 12px;
+
+}
