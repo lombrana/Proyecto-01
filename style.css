@@ -5,6 +5,7 @@
 
 :root {
     --font-size: 12px;
+    --font-family: open-sans;
     --color: #333333;
     --background-color: #ff6000;
 
@@ -48,8 +49,10 @@ header {
 
 .container-a {
     display: flex;
-    border-bottom: 0.5px solid #CCCCCC;
-    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #CCCCCC;
+    max-height: 90px;
 }
 
 .logo {
@@ -64,11 +67,19 @@ header {
     margin: 0;
     padding: 20px;
     position: relative;
-    left: 15%;
+    left: 50px;
+    height: 9pc;
 }
 
- #categorias {
+.search-container form {
+    display: inline;
+    position: relative;
+    left: 200px;
+}
+
+.categorias-toggle {
     padding: 12px;
+    margin: 30px 0 0 0;
     overflow: hidden;
     font-size: 14px;
     border: 1px solid #CCCCCC;
@@ -77,11 +88,32 @@ header {
     cursor: pointer;
 }
 
+.categorias-toggle:hover {
+    background-color: #e0dede;
+    border: none;
+}
+
+#chkcategorias {
+    display: none;
+}
+
+#chkcategorias:checked +ul.main-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
 #search-form {
     padding: 12px;
-    margin-left: 0;
+    margin: 30px 0 0 0;
     overflow: hidden;
     font-size: 14px;
+    font-family: var(--font-family);
     border: 1px solid #CCCCCC;
     justify-content: center;
     align-items: center;
@@ -91,7 +123,6 @@ header {
     background-color: #e0dede;
     border-radius: none;
 }
-
 
 /* menu */
 
@@ -167,18 +198,31 @@ header {
 }
 
 
-
 .main-nav {
     list-style-type: none;
     display: none;
+
 }
 
 .nav-links {
     text-decoration: none;
-    color: var(--color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-size);
     font-size: 1em;
-    padding: 4px;
+    color: #444444;
+}
+
+.nav-links:hover {
+    background-color: #e0dede;
+}
+
+.main-nav li {
+    margin-bottom: 10px;
+    
+}
+
+.nav-links img {
+    width: 15px;
+    height: 15px;
 }
 
 .text-anivers {
@@ -661,12 +705,11 @@ h4+p {
     
     #search-form {
         position: relative;
-        right: 40px;
+        right: 60px;
         max-width: 150px;
-        margin-top: 50px;
     }
     
-    #categorias {
+    .categorias-toggle {
         display: none;
     }
 
@@ -735,9 +778,8 @@ h4+p {
         margin-left: 70px;
     }
     
-    #categorias {
+    .categorias-toggle {
         display: none;
-        
     }
 
     .menu-list {

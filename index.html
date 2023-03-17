@@ -27,18 +27,34 @@
                     </a>   
                 </div>
 <!--search box-->
-                <div class="search-container">
-                    <form action="search" method="post">
-                        <label for="categorias">
-                        <input type="text" name="categorias" id="categorias" placeholder="Todas las categorias">
-                        </label>
 
-                        <label for="search-form">
-                        <input type="text" name="search-form" id="search-form" placeholder="Buscar">
-                        </label>
-                    </form>
-                </div>
-             
+                <nav>
+
+                    <div class="search-container">
+                        <form action="search" method="post">
+                            <label  class="categorias-toggle" id"categ-toggle"  for="chkcategorias"><span></span>Todas las categorias</span></label>
+                            <input type="checkbox" id="chkcategorias">
+                            
+                            <ul class="main-nav" id="js-menu">
+                                <li><a href="https://www.pccomponentes.com/portatiles/chrome" class="nav-links">
+                                    <img src="./assets/desplegable-icons/ordenadore.png" alt="computer"> Ordenadores</a></li>
+                                <li><a href="https://www.pccomponentes.com/smartphone-moviles" class="nav-links">
+                                    <img src="./assets/desplegable-icons/movil.png" alt="smartphone"> Smartphones y Telefonía</a></li>
+                                <li><a href="https://www.pccomponentes.com/home-cinema" class="nav-links">
+                                    <img src="./assets/desplegable-icons/foto.png" alt="Foto"> Audio, Foto y Video</a></li>
+                                <li><a href="https://www.pccomponentes.com/asistente-de-compra-para-tu-tv" class="nav-links">
+                                    <img src="./assets/desplegable-icons/tv.png" alt="Televisor"> Televisores</a></li>
+                            </ul>
+                            </label>
+
+                            <label for="search-form" id="search-box">
+                            <input type="text" name="search-form" id="search-form" placeholder="Buscar">
+                            </label>
+                           
+                        </form>
+                       
+                    </div>
+                </nav>
 
 <!-- menu-->
                 <nav class="nav-menu">
@@ -60,10 +76,14 @@
                     <input type="checkbox" id="chkToggle"/>
                               
                     <ul class="main-nav" id="js-menu">
-                        <li><a href="#" class="nav-links">Ordenadores 💻</a></li>
-                        <li><a href="#" class="nav-links">Smartphones y Telefonía 📲</a></li>
-                        <li><a href="#" class="nav-links">Audio, Foto y Video 🎞</a></li>
-                        <li><a href="#" class="nav-links">Televisores 📺</a></li>
+                        <li><a href="https://www.pccomponentes.com/portatiles" class="nav-links">
+                            <img src="./assets/desplegable-icons/ordenadore.png" alt="computer"> Ordenadores</a></li>
+                        <li><a href="https://www.pccomponentes.com/smartphone-moviles" class="nav-links">
+                            <img src="./assets/desplegable-icons/movil.png" alt="smartphone"> Smartphones y Telefonía</a></li>
+                        <li><a href="https://www.pccomponentes.com/home-cinema" class="nav-links">
+                            <img src="./assets/desplegable-icons/foto.png" alt="Foto"> Audio, Foto y Video</a></li>
+                        <li><a href="https://www.pccomponentes.com/asistente-de-compra-para-tu-tv" class="nav-links">
+                            <img src="./assets/desplegable-icons/tv.png" alt="Televisor"> Televisores</a></li>
                     </ul>
             
                 </nav>
