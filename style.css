@@ -48,34 +48,28 @@ header {
 /* container A */
 
 .container-a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     border-bottom: 1px solid #CCCCCC;
-    max-height: 90px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+
 }
 
 .logo {
-   align-items: center;
-   margin: 10px;
-   position: absolute;
-   left: 4px;
+    align-items: center;
+    margin: 0;
 }
 
 .search-container {
-    display: inline-block;
-    margin: 0;
-    padding: 20px;
-    position: relative;
-    left: 50px;
-    height: 9pc;
+        margin-left: 60px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+
 }
 
-.search-container form {
-    display: inline;
-    position: relative;
-    left: 200px;
-}
 
 .categorias-toggle {
     padding: 12px;
@@ -86,6 +80,7 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    display: flex;
 }
 
 .categorias-toggle:hover {
@@ -97,16 +92,44 @@ header {
     display: none;
 }
 
-#chkcategorias:checked +ul.main-nav{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    font-size: 12px;
+#chkcategorias:checked +ul.main-navone {
+    display: block;
     position: absolute;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
+    background-color: #ffffff;
+    
 }
+
+
+.main-navone {
+    list-style-type: none;
+    display: none;
+
+}
+
+.nav-linksone {
+    text-decoration: none;
+    font-family: var(--font-size);
+    font-size: 1em;
+    color: #444444;
+
+}
+
+.nav-linksone:hover {
+    background-color: #e0dede;
+}
+
+.main-navone li {
+    margin-bottom: 10px;
+    
+}
+
+.nav-linksone img {
+    width: 15px;
+    height: 15px;
+}
+
+/* -------------------------- */
+
 
 #search-form {
     padding: 12px;
@@ -121,31 +144,21 @@ header {
 
 #search-form:hover {
     background-color: #e0dede;
-    border-radius: none;
 }
 
-/* menu */
-
-
-.nav-menu {
-   display: flex;
-}
-
-.menu-list {
+.nav-menu .menu-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0;
-    padding: 20px;
-    position: relative;
-    left: 450px;
     list-style-type: none;
-    
+    margin-left: 20px;
+    position: relative;
+    left: 200px;
 }
 
 .item {
-    display: inline;
-    margin: 10px;
+    padding: 10px;
+    margin-right: 20px;
     font-size: 17px;
     text-decoration: none;
     color: var(--color);    
@@ -155,6 +168,7 @@ header {
     width: 20px;
     height: 20px;
 }
+
 
 /* Container B - sandwich */
 
@@ -193,7 +207,7 @@ header {
     display: none;
 }
 
- #chkToggle:checked +ul.main-nav {
+#chkToggle:checked +ul.main-nav {
     display: block;
 }
 
