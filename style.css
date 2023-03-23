@@ -719,7 +719,7 @@ h4+p {
     
     #search-form {
         position: relative;
-        right: 60px;
+        right: 30px;
         max-width: 150px;
     }
     
@@ -789,19 +789,23 @@ h4+p {
     #search-form {
         display: inline;
         position: relative;
-        margin-left: 70px;
+        margin-left: 10px;
     }
     
     .categorias-toggle {
         display: none;
     }
 
-    .menu-list {
-        display: inline-block;
+
+    .nav-menu .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
         position: relative;
-        left: 250px;
-        text-align: right;
-    }
+        left: 100px;
+    }    
+
 
     .grid-container {
         display: grid;
