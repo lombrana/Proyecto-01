@@ -11,6 +11,7 @@
 
 }
 
+
 @font-face {
     font-family: "open-sans";
     src: url("./assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
@@ -29,6 +30,7 @@ body {
     background-color: rgb(255, 255, 255);
     overflow: auto;
 }
+
 
 header {
     width: 100%;
@@ -327,12 +329,16 @@ h1> span {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    text-decoration: none;
 } 
 
- .swiper-1 a {
+.icon-swiper a {
+    text-decoration: none;
+}
+
+.swiper-1 a {
     display: flex;
     flex-direction: column;
-    text-decoration: none;  
 }
 a div {
     padding: 1px;
