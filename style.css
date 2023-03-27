@@ -50,14 +50,12 @@ header {
 .container-a {
     border-bottom: 1px solid #CCCCCC;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
-
 }
 
-.logo {
+.container-a > a {
     align-items: center;
     margin: 0;
 }
@@ -178,7 +176,6 @@ header {
     padding: 0;
     display: flex;
     align-items: center;
-
 }
 
 .navbar {
@@ -239,9 +236,7 @@ header {
     height: 15px;
 }
 
-.text-anivers {
-    margin: 2px;
-    padding: 2px;
+.container-b > article {
     position: relative;
     left: 900px;
 }
@@ -327,7 +322,7 @@ h1> span {
     width: 100%;
 }
 
-.swiper-1 {
+.swiper-area article {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -473,17 +468,18 @@ h3 {
 /* TENDENCIAS GRID */
 
 .h2-tendencias {
-    font-size: 14px;
+    font-size: 24px;
     color: var(--color);
     font-weight: bold;
+    padding: 24px;
 }
 
 .grid-tendencia {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
-    width: 100%;
     margin-bottom: 2.5rem;
+    padding: 1rem;
     justify-items: center;
 }
 
@@ -506,6 +502,14 @@ h3 {
 }
 
 /* GRID MARCAS */
+
+.title-marcas {
+    display: block;
+    font-size: 24px;
+    color: var(--color);
+    font-weight: bold;
+    padding: 24px;
+}
 
 .marcas-container {
     display: grid;
@@ -535,21 +539,46 @@ h3 {
     margin: auto;
 }
 
-.text-box h2 {
-    font-size:14px;
+.text h2 {
+    font-size: 14px;
 }
 
-.text-box p {
+.text-boxone p {
     font-size: var(--font-size);
+    margin-top: 1em;
+}
+
+.text-boxone .text-display {
+    display: block;
+}
+
+.text-boxone .bold-text {
+    font-weight: bold;
+}
+
+
+.text-boxtwo .boxtwo-p {
+    margin-top: 1em;
+    font-size:  var(--font-size);
 
 }
 
-.text-box ul {
+.text-boxtwo .bold-text {
+    font-weight: bold;
+}
+
+
+.text-boxtwo ul {
     font-size: var(--font-size);
 }
 
 .list-text {
     padding: 4px;
+}
+
+.text p {
+    font-size: var(--font-size);
+     margin-top: 1em;
 }
 
 /* Fin de Main */
@@ -679,9 +708,10 @@ h4+p {
     margin-bottom: 2rem;
     margin-top: 0;
     justify-content: space-around;
+    /* gap: 1rem; */
     padding: 5rem;
     font-size: var(--font-size);
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .footer-section {
